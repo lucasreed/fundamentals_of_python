@@ -35,17 +35,18 @@ class radius:
 
 def main():
     '''Gets input and puts results on the screen.'''
+    # import pdb; pdb.set_trace()
     this_rad = input("Enter Radius: ")
     try:
-        rad = float(this_rad)
+        f_rad = float(this_rad)
+        radius_inst = radius(f_rad)
+        print('Diameter is %.2f' % radius_inst.diameter)
+        print('Circumference is %.2f' % radius_inst.circumference)
+        print('Area is %.2f' % radius_inst.area)
+        print('Volume is %.2f' % radius_inst.volume)
     except ValueError:
         print("That's not a number.")
         main()
-    radius_inst = radius(rad)
-    print('Diameter is %.2f' % radius_inst.diameter)
-    print('Circumference is %.2f' % radius_inst.circumference)
-    print('Area is %.2f' % radius_inst.area)
-    print('Volume is %.2f' % radius_inst.volume)
 
 if __name__ == '__main__':
     main()
