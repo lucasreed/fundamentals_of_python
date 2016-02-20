@@ -15,19 +15,23 @@ class radius:
         self.volume = self._get_volume()
 
     def _get_diameter(self):
+        '''Calculate diameter of the sphere.'''
         diameter = self.radius * 2
         return diameter
 
     def _get_circumference(self):
+        '''Calculate circumference of the sphere.'''
         circumference = self.diameter * pi
         return circumference
 
     def _get_area(self):
+        '''Calculate area of the sphere.'''
         square_rad = self.radius ** 2
         area = square_rad * 4 * pi
         return area
 
     def _get_volume(self):
+        '''Calculate the volume of the sphere.'''
         rad_to_third = self.radius ** 3
         volume = (4 * pi * rad_to_third) / 3
         return volume
