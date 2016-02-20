@@ -5,4 +5,5 @@ User input includes the starting height as well as how many bounces the ball tak
 
 An assumption made here is that the index of "bounciness" is .6
 For example:
-Dropped from 10 feet, the next bounce will go 6 feet in the air (10 x .6)
+
+`Dropped from 10 feet, the next bounce will go 6 feet in the air (10 x .6)`
