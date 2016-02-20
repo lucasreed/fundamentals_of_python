@@ -39,7 +39,6 @@ class radius:
 
 def main():
     '''Gets input and puts results on the screen.'''
-    # import pdb; pdb.set_trace()
     this_rad = input("Enter Radius: ")
     try:
         f_rad = float(this_rad)

@@ -19,7 +19,7 @@ class Wage:
 
 
 def main():
-    '''Main code.'''
+    '''Gets input and puts results on the screen.'''
     try:
         rate = float(input("Hourly Rate: "))
         hours = float(input("Hours Worked: "))
